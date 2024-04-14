@@ -1,0 +1,44 @@
+.formWrapper {
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+    background-color: rgba(255, 255, 255, 0);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column !important;
+}
+
+.formWrapper h2 {
+    font-family: 'Libre Bodoni';
+    color: white;
+}
+
+.formWrapper form {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.formWrapper input, textarea {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    padding: 0.5rem;
+    color: white;
+    resize: none;
+    margin: 0.5rem 1rem;
+}
+
+.formWrapper input {
+    width: calc(50% - 2.5rem);
+}
+
+.formWrapper textarea {
+    flex-grow: 1;
+}
+
+.formWrapper input::placeholder, textarea::placeholder {
+    color: white;
+}

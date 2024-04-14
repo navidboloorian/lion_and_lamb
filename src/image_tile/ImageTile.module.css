@@ -1,0 +1,38 @@
+.imageTile {
+    position: relative;
+    flex: auto;
+    margin: 0 1rem;
+}
+
+.image {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imageText {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--lal-blue);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imageText:hover {
+    opacity: 1;
+}
+
+.imageText p {
+    font-family: 'Montserrat';
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.5rem;
+}

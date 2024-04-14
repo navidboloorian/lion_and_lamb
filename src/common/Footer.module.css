@@ -1,0 +1,15 @@
+.footer {
+    font-family: 'Montserrat';
+    color: var(--lal-blue);
+    background-color: white;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerContent img {
+    width: 450px;
+}
