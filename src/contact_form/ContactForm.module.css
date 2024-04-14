@@ -8,8 +8,9 @@
 }
 
 .formWrapper h2 {
-    font-family: 'Libre Bodoni';
+    font-family: 'Poppins';
     color: white;
+    font-weight: 200;
 }
 
 .inputs {
@@ -36,6 +37,7 @@
     color: white;
     resize: none;
     margin: 0.5rem 1rem;
+    font-weight: 100;
 }
 
 .inputs input {
@@ -56,6 +58,7 @@ input[type="submit"] {
     text-align: center;
     margin: 0.5rem 1rem;
     width: 5rem;
+    font-weight: 100;
 }
 
 .formWrapper input::placeholder, textarea::placeholder {

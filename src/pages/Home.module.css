@@ -1,0 +1,21 @@
+.logoHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    align-items: center;
+}
+
+.logoHeader h1 {
+    font-size: 4rem;
+    font-family: 'Poppins';
+    letter-spacing: 1rem;
+    color: var(--lal-blue);
+    font-weight: 200;
+}
+
+.logoHeader img {
+    width: 25rem;
+    align-self: center;
+}
