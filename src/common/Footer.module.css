@@ -2,15 +2,15 @@
     font-family: 'Montserrat';
     color: var(--lal-blue);
     background-color: white;
-    font-weight: 100;
 }
 
 .footerContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.7rem;
 }
 
 .footerContent img {
-    width: 450px;
+    width: 300px;
 }

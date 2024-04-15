@@ -5,12 +5,19 @@
     align-items: center;
     justify-content: center;
     flex-direction: column !important;
+    margin: 5% 10%;
 }
 
 .formWrapper h2 {
     font-family: 'Poppins';
     color: white;
     font-weight: 200;
+}
+
+.formWrapper h3 {
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: white;
 }
 
 .inputs {
@@ -63,4 +70,57 @@ input[type="submit"] {
 
 .formWrapper input::placeholder, textarea::placeholder {
     color: white;
+}
+
+.checkboxes {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.checkboxes input {
+    border: 0px;
+}
+
+.checkboxContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: calc(50% - 0.5rem);
+}
+
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkboxContainer input:checked ~ .checkmark {
+    background-color: white;
+}
+
+.checkboxContainer p {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat';
+    margin-left: 0.5rem;
+}
+
+.checkmark {
+    height: 1rem;
+    width: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+}
+
+.secondHalf {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
 }
