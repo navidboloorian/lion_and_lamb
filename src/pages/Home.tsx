@@ -9,7 +9,10 @@ const Home = () => {
             <BackgroundSlideshow />
             <div className={styles.logoHeader}>
                 <img src={textLogo} alt="Lion & Lamb Logo" />
-                <h1>Art Elevated</h1>
+                <div className={styles.logoText}>
+                    <h1>Art Elevated</h1>
+                    <h2>Synergy between business and art</h2>
+                </div>
             </div>
             <ImageTileRow />
         </>

@@ -7,15 +7,27 @@
     align-items: center;
 }
 
-.logoHeader h1 {
-    font-size: 4rem;
-    font-family: 'Poppins';
-    letter-spacing: 1rem;
-    color: var(--lal-blue);
-    font-weight: 200;
+.logoHeader img {
+    width: 20rem;
+    align-self: center;
 }
 
-.logoHeader img {
-    width: 25rem;
-    align-self: center;
+.logoText {
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    color: var(--lal-blue);
+    align-items: end;
+}
+
+.logoText h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    font-weight: 300;
+    margin-right: -1rem;
+}
+
+.logoText h2 {
+    font-size: 2rem;
+    font-weight: 200;
 }

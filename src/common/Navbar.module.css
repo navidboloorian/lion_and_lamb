@@ -28,7 +28,7 @@
 .navbar ul a {
     text-transform: uppercase;
     color: var(--lal-blue);
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-decoration: none;
 }
 
