@@ -1,0 +1,10 @@
+.headshot {
+    display: flex;
+    flex-direction: column;
+}
+
+.headshot h3 {
+    color: var(--lal-blue);
+    font-weight: 200;
+    margin: 0;
+}
