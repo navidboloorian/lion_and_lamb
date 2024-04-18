@@ -10,7 +10,7 @@ const ContactForm = () => {
                     <input type="text" placeholder="Company" />
                     <input type="email" placeholder="Email" />
                     <input type="text" placeholder="Number" />
-                    <textarea placeholder="Message" rows={10}></textarea>
+                    <textarea placeholder="Message" rows={5}></textarea>
                 </div>
                 <div className={styles.secondHalf}>
                     <h3>What would you like to discuss?</h3>
