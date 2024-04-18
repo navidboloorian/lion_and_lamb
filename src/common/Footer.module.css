@@ -14,3 +14,11 @@
 .footerContent img {
     width: 300px;
 }
+
+.socialMediaIcons {
+    display: flex;
+}
+
+.socialMediaIcons img {
+    width: 50px;
+}

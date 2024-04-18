@@ -1,6 +1,7 @@
 .headshot {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .headshot h3 {
