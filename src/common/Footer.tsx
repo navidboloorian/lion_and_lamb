@@ -11,8 +11,8 @@ const Footer = () => {
                     info@lambandlion.art
                 </p>
                 <div className={styles.socialMediaIcons}>
-                    <img src={linkedin} />
-                    <img src={instagram} />
+                    <a href="https://www.instagram.com/rachaelleesays/" target="_blank"><img src={instagram} /></a>
+                    <a href="https://www.linkedin.com/in/rachaellambert" target="_blank"><img src={linkedin} /></a>
                 </div>
             </div>
         </footer>

@@ -46,9 +46,9 @@ const ContactForm = () => {
                             <p>Industry relationships</p>
                         </label>  
                         <label className={styles.checkboxContainer}>
-                            <input type="checkbox" value="Gallery build//rebrand" name="discuss" />
+                            <input type="checkbox" value="Gallery build/rebrand" name="discuss" />
                             <span className={styles.checkmark}></span>
-                            <p>Gallery build//rebrand</p>
+                            <p>Gallery build/rebrand</p>
                         </label>  
                     </div>
                     <h3>How did you hear about us?</h3>
