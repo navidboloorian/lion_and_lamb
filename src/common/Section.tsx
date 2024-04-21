@@ -13,8 +13,8 @@ const Section = ({title, leftFrac, rightFrac, children} : SectionProps) => {
             <section className={styles.section}>
                 <h2>{title}</h2>
                 <div className={`content ${styles.sectionContent}`}>
-                    <div style={{flex: leftFrac}}>{children[0]}</div>
-                    <div style={{flex: rightFrac}}>{children[1]}</div> 
+                    <div className={styles.left} style={{flex: leftFrac}}>{children[0]}</div>
+                    <div className={styles.right} style={{flex: rightFrac}}>{children[1]}</div> 
                 </div>
             </section>
         </div>

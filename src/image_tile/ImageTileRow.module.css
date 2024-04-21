@@ -4,4 +4,18 @@
     width: 100%;
     box-sizing: border-box;
     padding: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media (750px <= width <= 1250px) {
+    .imageTileRow {
+        height: 80vh;
+    }
+}
+
+@media (width < 750px) {
+    .imageTileRow {
+        height: 160vh;
+    }
 }

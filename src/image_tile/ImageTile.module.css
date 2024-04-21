@@ -1,7 +1,6 @@
 .imageTile {
     position: relative;
     flex: auto;
-    margin: 0 1rem;
 }
 
 .image {
@@ -36,4 +35,16 @@
     font-size: 1rem;
     padding: 0.5rem;
     font-weight: 100;
+}
+
+@media (500px <= width <= 1250px) {
+    .imageTile {
+        flex-basis: 40%;
+    }
+}
+
+@media (width < 750px) {
+    .imageTile {
+        flex-basis: 80%;
+    }
 }

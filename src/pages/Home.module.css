@@ -5,6 +5,7 @@
     box-sizing: border-box;
     padding: 2rem;
     align-items: center;
+    padding-bottom: 0;
 }
 
 .logoHeader img {
@@ -30,4 +31,38 @@
 .logoText h2 {
     font-size: 2rem;
     font-weight: 200;
+}
+
+
+@media (500px < width <= 1250px) {
+    .logoHeader {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .logoText {
+        align-items: center;
+        text-align: center;
+    }
+
+    .logoText h1 {
+        margin: 1rem 0;
+    }
+    
+    .logoText h2 {
+        margin: 0;
+    }
+}
+
+@media (width <= 500px) {
+    .logoHeader {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .logoText {
+        display: none;
+    }
 }

@@ -10,3 +10,10 @@
   max-width: 100%;
   height: auto;
 }
+
+@media (width < 950px) {
+
+  .section-image {
+      width: 100%;
+  }
+}
