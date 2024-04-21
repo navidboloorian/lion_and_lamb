@@ -8,10 +8,10 @@ import styles from "./ImageTileRow.module.css";
 const ImageTileRow = () => {
     return(
         <div className={styles.imageTileRow}>
-            <ImageTile src={image1} text="testing" />
-            <ImageTile src={image2} text="longer testing" />
-            <ImageTile src={image3} text="longer than longer testing" />
-            <ImageTile src={image4} text="longest testing longest testing longest testing longest testing longest testing longest testing" />
+            <ImageTile src={image1} text="Project Management" />
+            <ImageTile src={image2} text="Art Fairs & Exhibitions" />
+            <ImageTile src={image3} text="Acquisition" />
+            <ImageTile src={image4} text="Studio Assistance" />
         </div>
     );
 }
