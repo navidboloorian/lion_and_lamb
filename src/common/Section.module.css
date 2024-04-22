@@ -50,4 +50,8 @@
     .right p, .left p {
         width: 100%;
     }
+
+    .reversed {
+        flex-direction: column-reverse;
+    }
 }

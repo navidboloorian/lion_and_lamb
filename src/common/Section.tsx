@@ -5,14 +5,15 @@ interface SectionProps {
     leftFrac: number;
     rightFrac: number;
     children: Array<React.ReactNode>;
+    reversed?: boolean;
 }
 
-const Section = ({title, leftFrac, rightFrac, children} : SectionProps) => {
+const Section = ({title, leftFrac, rightFrac, children, reversed=false} : SectionProps) => {
     return (
         <div className={styles.wrapper}>
             <section className={styles.section}>
                 <h2>{title}</h2>
-                <div className={`content ${styles.sectionContent}`}>
+                <div className={`content ${styles.sectionContent} ${reversed ? styles.reversed : ""}`}>
                     <div className={styles.left} style={{flex: leftFrac}}>{children[0]}</div>
                     <div className={styles.right} style={{flex: rightFrac}}>{children[1]}</div> 
                 </div>
