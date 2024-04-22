@@ -4,7 +4,6 @@ import image2 from "../assets/background_2.jpg";
 import image3 from "../assets/background_3.jpg";
 import image4 from "../assets/background_4.jpg";
 import { useEffect } from "react";
-import style from "./Work.module.css";
 
 const Work = () => {
     useEffect(() => {
