@@ -3,8 +3,17 @@ import image1 from "../assets/background_1.jpg";
 import image2 from "../assets/background_2.jpg";
 import image3 from "../assets/background_3.jpg";
 import image4 from "../assets/background_4.jpg";
+import { useEffect } from "react";
 
 const Work = () => {
+    useEffect(() => {
+        const contents : NodeListOf<HTMLDivElement> = document.querySelectorAll(`.content`);
+
+        for(const content of contents) {
+            content.style.maxWidth = "900px";
+        }
+    }, []);
+    
     return(
         <>
             <Section title={"Project Management"} leftFrac={2} rightFrac={3}>

@@ -1,7 +1,16 @@
 import Section from "../common/Section";
 import image8 from "../assets/background_8.jpg";
+import { useEffect } from "react";
 
 const About = () => {
+    useEffect(() => {
+        const contents : NodeListOf<HTMLDivElement> = document.querySelectorAll(`.content`);
+
+        for(const content of contents) {
+            content.style.maxWidth = "900px";
+        }
+    }, []);
+    
     return(
         <Section title={"About"} leftFrac={1} rightFrac={3}>
             <img className="section-image" src={image8} />

@@ -38,7 +38,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     border: 1px solid white;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: 'Montserrat';
     padding: 0.5em;
     color: white;
@@ -60,7 +60,7 @@ input[type="submit"] {
     background-color: rgba(255, 255, 255, 0.3);
     color: white;
     padding: 0.5em;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: 'Montserrat';
     text-align: center;
     margin: 0.5em 1em;
@@ -87,6 +87,8 @@ input[type="submit"] {
     display: flex;
     flex-direction: row;
     width: calc(50% - 0.5em);
+    font-size: 1rem;
+    font-weight: 200;
 }
 
 .checkboxContainer input {

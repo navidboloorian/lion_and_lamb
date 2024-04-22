@@ -3,8 +3,17 @@ import Section from "../common/Section";
 import ContactForm from "../contact_form/ContactForm";
 import headshot from "../assets/rachael.png";
 import styles from ".//Contact.module.css";
+import { useEffect } from "react";
 
 const Contact = () => {
+    useEffect(() => {
+        const contents : NodeListOf<HTMLDivElement> = document.querySelectorAll(`.content`);
+
+        for(const content of contents) {
+            content.style.maxWidth = "900px";
+        }
+    }, []);
+
     return (
         <>
             <BackgroundVideo>
