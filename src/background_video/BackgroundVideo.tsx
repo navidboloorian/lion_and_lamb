@@ -8,7 +8,19 @@ interface BackgroundVideoProps {
 
 const BackgroundVideo = ({children} : BackgroundVideoProps) => {
     useEffect(() => {
-        (document.querySelector("#myVideo") as HTMLVideoElement).playbackRate = 0.5;
+        (document.querySelector("#myVideo") as HTMLVideoElement).playbackRate = 0.5;    
+
+        window.addEventListener("resize", () => {
+            if(window.innerWidth <= 600) {
+                (document.querySelector("#myVideo") as HTMLVideoElement).src = "";    
+            }
+            else {
+                (document.querySelector("#myVideo") as HTMLVideoElement).src = video;    
+            }
+        });
+        
+        
+
     }, []);
 
     return (
