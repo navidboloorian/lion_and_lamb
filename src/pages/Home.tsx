@@ -11,7 +11,6 @@ const Home = () => {
         for(const content of contents) {
             content.style.maxWidth = "100vw";
         }
-
     }, []);
 
     return (
@@ -21,7 +20,7 @@ const Home = () => {
                 <img src={textLogo} alt="Lion & Lamb Logo" />
                 <div className={styles.logoText}>
                     <h1>Art Elevated</h1>
-                    <h2>art and business</h2>
+                    <h2>Synergy between art and business</h2>
                 </div>
             </div>
             <ImageTileRow />
