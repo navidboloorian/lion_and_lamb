@@ -4,7 +4,7 @@ const ContactForm = () => {
     return(
         <div className={`content ${styles.formWrapper}`}>
             <h2>Contact</h2>
-            <form>
+            <form action="https://formspree.io/f/xqkrnqdn">
                 <div className={styles.inputs}>
                     <input type="text" placeholder="Name" />
                     <input type="text" placeholder="Company" />
