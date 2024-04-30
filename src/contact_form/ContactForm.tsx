@@ -3,7 +3,7 @@ import { useForm } from "@formspree/react";
 
 
 const ContactForm = () => {
-    const [state, handleSubmit, reset] = useForm("xqkrnqdn");
+    const [state, handleSubmit] = useForm("xqkrnqdn");
     const successBox : HTMLDivElement | null = document.querySelector(`.${styles.success}`);
     const errorBox : HTMLDivElement | null = document.querySelector(`.${styles.error}`);
 
