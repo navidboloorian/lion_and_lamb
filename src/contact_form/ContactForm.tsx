@@ -1,16 +1,46 @@
 import styles from "./ContactForm.module.css"
+import { useForm } from "@formspree/react";
+
 
 const ContactForm = () => {
+    const [state, handleSubmit, reset] = useForm("xqkrnqdn");
+    const successBox : HTMLDivElement | null = document.querySelector(`.${styles.success}`);
+    const errorBox : HTMLDivElement | null = document.querySelector(`.${styles.error}`);
+
+
+    if(!state.submitting) {    
+        if(state.succeeded) {
+            if(errorBox && successBox) {
+                successBox.classList.remove(`${styles.hidden}`);
+
+                if(!errorBox.classList.contains(`${styles.hidden}`)) {
+                    errorBox.classList.add(`${styles.hidden}`);
+                }
+            }
+        }
+        else {
+            if(errorBox && successBox) {
+                errorBox.classList.remove(`${styles.hidden}`);
+
+                if(!successBox.classList.contains(`${styles.hidden}`)) {
+                    successBox.classList.add(`${styles.hidden}`);
+                }
+            }
+        }
+    }
+
     return(
         <div className={`content ${styles.formWrapper}`}>
             <h2>Contact</h2>
-            <form action="https://formspree.io/f/xqkrnqdn" method="POST">
+            <form onSubmit={handleSubmit}>
                 <div className={styles.inputs}>
-                    <input type="text" placeholder="Name" name="Name" />
-                    <input type="text" placeholder="Company" name="Company" />
-                    <input type="email" placeholder="Email" name="Email" />
-                    <input type="text" placeholder="Number" name="Number" />
-                    <textarea placeholder="Message" rows={5}></textarea>
+                    <div className={`${styles.responseBox} ${styles.success} ${styles.hidden}`}>Submitted! Thank you for your inquiry!</div>
+                    <div className={`${styles.responseBox} ${styles.error} ${styles.hidden}`}>Error! There was an issue submitting the form!</div>
+                    <input type="text" placeholder="Name" name="Name" required />
+                    <input type="text" placeholder="Company" name="Company" required />
+                    <input type="email" placeholder="Email" name="Email" required />
+                    <input type="text" placeholder="Number" name="Number" required />
+                    <textarea placeholder="Message" rows={5} name="Message"></textarea>
                 </div>
                 <div className={styles.secondHalf}>
                     <h3>What would you like to discuss?</h3>
@@ -90,7 +120,7 @@ const ContactForm = () => {
                         </label>  
                     </div>
                 </div>
-                <input type="submit" value="Send" />
+                <input type="submit" disabled={state.submitting} value="Send" />
             </form>
         </div>
     );

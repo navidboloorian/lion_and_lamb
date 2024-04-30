@@ -127,6 +127,30 @@ input[type="submit"] {
     box-sizing: border-box;
 }
 
+.responseBox {
+    font-family: 'Montserrat';
+    width: calc(100% - 2.5rem);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    border: 1px solid green;
+    background-color: #F0FFF0;
+}
+
+.error {
+    color: #9D1309;
+    border: 1px solid #9D1309;
+    background-color: #EEB4B4;
+}
+
+.hidden {
+    display: none;
+}
+
 @media (width < 700px) {
     .inputs input {
         width: calc(100%);
