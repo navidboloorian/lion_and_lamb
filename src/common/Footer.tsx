@@ -8,7 +8,7 @@ const Footer = () => {
             <div className={`content ${styles.footerContent}`}>
                 <p>
                     (442)245-4945<br />
-                    info@lambandlion.art
+                    info@lionandlamb.art
                 </p>
                 <div className={styles.socialMediaIcons}>
                     <a href="https://www.instagram.com/rachaelleesays/" target="_blank"><img src={instagram} /></a>
