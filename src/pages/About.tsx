@@ -32,10 +32,6 @@ const About = () => {
                     </ul>
                 </div>
             </Section>
-            <Section leftFrac={1} rightFrac={1} title={"We specialize in bespoke, innovative strategies that offer tailored solutions to their unique needs."}>
-                <></>
-                <></>
-            </Section>
         </>
     );
 }

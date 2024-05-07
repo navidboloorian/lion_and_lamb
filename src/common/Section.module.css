@@ -30,6 +30,10 @@
     background-color: white;
 }
 
+.centered {
+    text-align: center;
+}
+
 @media (width < 950px) {
     .section, .sectionContent {
         width: calc(100vw - 4rem);
