@@ -13,7 +13,7 @@ const Section = ({title, leftFrac, rightFrac, children, reversed=false, centered
     return (
         <div className={styles.wrapper}>
             <section className={styles.section}>
-                <h2 className={centered ? "centered" : ""}>{title}</h2>
+                <h2 className={centered ? styles.centered : ""}>{title}</h2>
                 <div className={`content ${styles.sectionContent} ${reversed ? styles.reversed : ""}`}>
                     <div className={styles.left} style={{flex: leftFrac}}>{children[0]}</div>
                     <div className={styles.right} style={{flex: rightFrac}}>{children[1]}</div> 
