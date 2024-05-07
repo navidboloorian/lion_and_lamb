@@ -16,6 +16,10 @@ const Work = () => {
     
     return(
         <>
+            <Section title={"Building and nurturing authentic connections with collaborators and audiences is the core of our success and remains a key factor in our achievements. Lion & Lamb builds relevance and excitement to each of our projects through impeccable market research and ongoing extensive knowledge of the US market and art ecosystem."} leftFrac={1} rightFrac={1}>
+                <></>
+                <></>
+            </Section>
             <Section title={"Project Management"} leftFrac={2} rightFrac={3}>
                 <img className="section-image" src={image1} />
                 <p>

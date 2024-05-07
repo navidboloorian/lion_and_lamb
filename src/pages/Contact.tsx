@@ -25,7 +25,7 @@ const Contact = () => {
                     <h3>Rachael Lambert</h3>
                 </div>
                 <p>
-                With more than ten years of experience in the contemporary fine arts  industry, including a recent position as director of a renowned gallery  in Southern California, and possessing an MBA with a specialization in  the arts, I am equipped with a vast amount of expertise to contribute to  artist studios,  curation, projects, and collection management.
+                Rachael Lambert brings over a decade of experience in the contemporary fine arts industry, backed by an MBA in international contemporary fine arts. She has held prestigious positions in galleries spanning from emerging underrepresented communities in Los Angeles to globally established galleries, showcasing her diverse expertise. A skilled marketer, Rachael has a proven ability to anticipate and capitalize on global trends, establishing herself as a trailblazer in the field. She excels at building strong relationships with clients and consumers, driving innovation and success. Rachael's passion and deep knowledge have led to the creation and launch of multiple artist studios, galleries and projects solidifying her reputation as a transformative figure in the art world.
                 </p>
             </Section>
         </>

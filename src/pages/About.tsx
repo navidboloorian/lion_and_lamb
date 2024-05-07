@@ -12,14 +12,31 @@ const About = () => {
     }, []);
     
     return(
-        <Section title={"About"} leftFrac={1} rightFrac={3}>
-            <img className="section-image" src={image8} />
-            <p>
-                Welcome to Lion & Lamb, the pinnacle of creative consultancy where visionary art meets strategic brilliance. At  Lamb & Lion, we specialize in seamlessly fusing the realms of artistic expression and business acumen, transforming ideas into masterpieces and ventures into triumphs.<br /><br />
-                Lamb & Lion is not just a consultancy; it's a commitment to elevating the intersection of art and business. We pride ourselves on our dedication to excellence, attention to detail, and an unwavering passion for bringing artistic visions to life. With us, your creative journey becomes a seamless, inspiring, and triumphant experience.<br /><br />
-                Building and nurturing authentic connections with collaborators and audiences is the core of our success and remains a key factor in our achievements. Lion & Lamb builds relevance and excitement to each of our projects through impeccable market research and ongoing extensive knowledge of the US market and art ecosystem.
-            </p>
-        </Section>
+        <>
+            <Section title={"About"} leftFrac={1} rightFrac={3}>
+                <img className="section-image" src={image8} />
+                <div>
+                    <p>Our company values the partnerships we have with our clients, approaching each relationship as a strategic collaboration. We work closely with clients to understand their objectives, create innovative solutions, and deliver exceptional results. Throughout our engagement, we are committed to helping you achieve your goals effectively.</p>
+                    <ul>
+                        <li>Gallery and Artist Branding/Rebranding Assistance</li>
+                        <li>Gallery/Artist Studio Builds and Scalability Solutions</li>
+                        <li>Marketing and Content Strategy Development</li>
+                        <li>Sales Support and Logistics Provision</li>
+                        <li>Project Management</li>
+                        <li>Public, Corporate, and Private Acquisitions </li>
+                        <li>Software Implementation Services</li>
+                        <li>Crisis management </li>
+                        <li>Event Planning and Execution</li>
+                        <li>PR Strategy Building</li>
+                        <li>Curating, Writing, and Fair/Exhibition Strategy Construction</li>
+                    </ul>
+                </div>
+            </Section>
+            <Section leftFrac={1} rightFrac={1} title={"We specialize in bespoke, innovative strategies that offer tailored solutions to their unique needs."}>
+                <></>
+                <></>
+            </Section>
+        </>
     );
 }
 
