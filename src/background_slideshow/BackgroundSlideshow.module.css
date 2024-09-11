@@ -1,8 +1,0 @@
-.backgroundSlideshow {
-    align-items: end;
-    background-size: cover;
-    transition: background-image 500ms linear;
-    background-position: center;
-    display: flex;
-    height: calc(60vh - 3.5rem);
-}  
